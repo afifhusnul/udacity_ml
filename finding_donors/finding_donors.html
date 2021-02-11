@@ -15052,18 +15052,23 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <p>1.AdaBoostClassifier
 2.DecisionTreeClassifier
 3.Support Vector Machine (SVM)</p>
-<h2 id="Adaboost">Adaboost<a class="anchor-link" href="#Adaboost">&#182;</a></h2><p>Real-world application - This model can be applied to most real-world classification problems.
-Strengths -  A strength of this model is its performance. It performs well for most cases.
-Weaknesses - AdaBoost is very sensitive to load data hence it is important to make sure you have good data
-Good candidate - its has strong performance with datasets that contain many features</p>
-<h2 id="Decision-Tree">Decision Tree<a class="anchor-link" href="#Decision-Tree">&#182;</a></h2><p>Real-world application - A decision tree lets you predict responses to data by following the decisions in the tree beginning from the root  down to a leaf node.
-Strengths - Algorithm is easy to interpret and fast to fit &amp; low memory usage.
-Weaknesses - Some times it will be unstable, because small variance in data can result in a different decision tree.
-Good candidate - has a reasonable amount time to generate the result from the root  down to a leaf node</p>
-<h2 id="Support-Vector-Machine-(SVM)">Support Vector Machine (SVM)<a class="anchor-link" href="#Support-Vector-Machine-(SVM)">&#182;</a></h2><p>Real-worl applocation - SVM correctly classifies invisible data. Such as determining the classification of genes and patients on the basis of genes and other biological problems.
-Strengths - SVM more effective in high dimensional spaces, is effective in cases where the number of dimensions is greater than the number of samples. SVM is relatively memory efficient
-Weaknesses - SVM algorithm is not suitable for large data sets, does not perform very well when the data set has more noise . Doesn't directly provide probability estimates.
-Good candidate - This model has effectiveness due to their high dimensions. SVM should be a classifier that works regardless our dataset is not so large as to be a deterrent &amp; perform well</p>
+<h2 id="Adaboost">Adaboost<a class="anchor-link" href="#Adaboost">&#182;</a></h2><ul>
+<li>Can use various weak classifiers without filtering features. In addition, it delivers high execution efficiency, and can avoid overfitting issues</li>
+<li>Able to trains the weak classifiers without knowing the prior knowledge. The synthetic strong classifier can significantly improve the classification accuracy, and it is suitable for classification of most types of data</li>
+<li>The training of rough weak classifiers is much easier than training of the accurate strong classifiers. It trains multiple weak classifiers to form a strong classifier with better classification performance.</li>
+</ul>
+<h2 id="Decision-Tree">Decision Tree<a class="anchor-link" href="#Decision-Tree">&#182;</a></h2><ul>
+<li>Typically very fast!</li>
+<li>Can handle both categorical and numerical features</li>
+<li>As we can the nitely see here that our Decision Tree has an overatting issue. This is typical with Decision Trees and Random Forests.</li>
+<li>They are are easy to visualize.</li>
+</ul>
+<h2 id="Support-Vector-Machine-(SVM)">Support Vector Machine (SVM)<a class="anchor-link" href="#Support-Vector-Machine-(SVM)">&#182;</a></h2><ul>
+<li>Typically much slower, but the kernel trick makes it very nice to fit non-linear data.</li>
+<li>They are memory efficient, as they only have to remember the support vectors.</li>
+<li>Also note that the SVM output parameters are not really interpretable.</li>
+<li>We can use probability = True to calculate probabilities, however very slow as it used ve fold CV</li>
+</ul>
 
 </div>
 </div>
@@ -15555,7 +15560,12 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer: </strong></p>
-<p>AdaBoost : This classifier has produced the highest F-test score when all training data was used, making it the top-performing model</p>
+<p>I will choose Adaboost as the model to improve, because of the following:</p>
+<ul>
+<li>The F score on the testing when 100% of the training data is used shows the Adaboost model gives highest F score.</li>
+<li>The prediction/training time for Adaboost model not be the fastest but still below SVM.</li>
+<li>Based on the accuracy, F-score and sensability to the sample size, the Adaboost model is the best for the data.</li>
+</ul>
 
 </div>
 </div>
@@ -15572,14 +15582,14 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer: </strong></p>
-<p>AdaBoost is the first realization of boosting algorithms in 1996 by Freund &amp; Schapire. The underlying classifier in a boosting algorithm is called 'base classifier'. 
-This underlying base classifier for AdaBoost is a decision stamp which is a decision tree with one level.</p>
-<p>A major goal of the AdaBoost algorithm is to combine these really weak one-level decision stamp classifiers and generate a strong classifier at the end. In other word.
-Applied this learner (ML) algorithms with a different distribution To find weak rule,. Each time base learning algorithm is applied, its generates a new weak prediction rule. 
-This is an iterative process. After many iterations, the boosting algorithm combines these weak rules into a single strong prediction rule and which eventually improves the prediction power of the model. 
-Boosting pays higher focus on examples which are mis-classiﬁed or have higher errors by preceding weak rules and in our case,</p>
-<p>The most weak learners algorithm was the decision trees. The decision tree algorithm separates multiple times over several iterations until the tree reaches its maximum depth. 
-When making predictions, the data passes through each division, and is separated by the threshold set during training,to finally reach a leaf with a target class prediction</p>
+<p>I have chosen to work with the AdaBoost classifier as it is the best classifier for this data set for the following reasons:</p>
+<p>AdaBoost is one of the first boosting algorithms to be adapted in solving practices. Adaboost helps you combine multiple “weak classifiers” into a single “strong classifier”. Here are some (fun) facts about Adaboost!</p>
+<ul>
+<li>The weak learners in AdaBoost are decision trees with a single split, called decision stumps.</li>
+<li>AdaBoost works by putting more weight on difficult to classify instances and less on those already handled well.</li>
+<li>AdaBoost algorithms can be used for both classification and regression problem.</li>
+</ul>
+<p>Full resource material will be cover in here (<a href="https://towardsdatascience.com/understanding-adaboost-2f94f22d5bfe">https://towardsdatascience.com/understanding-adaboost-2f94f22d5bfe</a>)</p>
 
 </div>
 </div>
