@@ -15070,16 +15070,18 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <li>Weaknesses : Also note that the SVM output parameters are not really interpretable.</li>
 <li>Good candidate for the problem : We can use probability = True to calculate probabilities, however very slow as it used ve fold CV</li>
 </ul>
-<p>References I used --&gt;
-<a href="https://corporatefinanceinstitute.com/resources/knowledge/other/boosting/">https://corporatefinanceinstitute.com/resources/knowledge/other/boosting/</a>
-<a href="https://www.datacamp.com/community/tutorials/adaboost-classifier-python">https://www.datacamp.com/community/tutorials/adaboost-classifier-python</a>
-<a href="http://www.cs.man.ac.uk/~nikolaon/~nikolaon_files/Introduction_to_AdaBoost.pdf">http://www.cs.man.ac.uk/~nikolaon/~nikolaon_files/Introduction_to_AdaBoost.pdf</a>
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6471212/#:~:text=AdaBoost%20is%20a%20boosting%20algorithm,tree%20as%20a%20weak%20classifier.&amp;text=Although%20the%20AdaBoost%20algorithm%20can,than%20samples%20of%20minority%20class">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6471212/#:~:text=AdaBoost%20is%20a%20boosting%20algorithm,tree%20as%20a%20weak%20classifier.&amp;text=Although%20the%20AdaBoost%20algorithm%20can,than%20samples%20of%20minority%20class</a>
-<a href="https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/">https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/</a>
-<a href="https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python">https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python</a>
-<a href="https://towardsdatascience.com/understanding-decision-tree-classifier-7366224e033b">https://towardsdatascience.com/understanding-decision-tree-classifier-7366224e033b</a>
-<a href="https://review.udacity.com/#!/reviews/2745295">https://review.udacity.com/#!/reviews/2745295</a>
-And Udacity material</p>
+<p>References I used --&gt;</p>
+<ul>
+<li><a href="https://corporatefinanceinstitute.com/resources/knowledge/other/boosting/">https://corporatefinanceinstitute.com/resources/knowledge/other/boosting/</a></li>
+<li><a href="https://www.datacamp.com/community/tutorials/adaboost-classifier-python">https://www.datacamp.com/community/tutorials/adaboost-classifier-python</a></li>
+<li><a href="http://www.cs.man.ac.uk/~nikolaon/~nikolaon_files/Introduction_to_AdaBoost.pdf">http://www.cs.man.ac.uk/~nikolaon/~nikolaon_files/Introduction_to_AdaBoost.pdf</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6471212/#:~:text=AdaBoost%20is%20a%20boosting%20algorithm,tree%20as%20a%20weak%20classifier.&amp;text=Although%20the%20AdaBoost%20algorithm%20can,than%20samples%20of%20minority%20class">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6471212/#:~:text=AdaBoost%20is%20a%20boosting%20algorithm,tree%20as%20a%20weak%20classifier.&amp;text=Although%20the%20AdaBoost%20algorithm%20can,than%20samples%20of%20minority%20class</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/">https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/</a></li>
+<li><a href="https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python">https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python</a></li>
+<li><a href="https://towardsdatascience.com/understanding-decision-tree-classifier-7366224e033b">https://towardsdatascience.com/understanding-decision-tree-classifier-7366224e033b</a></li>
+<li><a href="https://review.udacity.com/#!/reviews/2745295">https://review.udacity.com/#!/reviews/2745295</a>
+And Udacity material</li>
+</ul>
 
 </div>
 </div>
@@ -15594,7 +15596,19 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer: </strong></p>
 <p>I have chosen to work with the AdaBoost classifier as this algorithm have advantages to process &amp; train data effieciently and consume low memory but able to produce a good result for large data set</p>
-<p>Full resource material will be cover in here (<a href="https://towardsdatascience.com/understanding-adaboost-2f94f22d5bfe">https://towardsdatascience.com/understanding-adaboost-2f94f22d5bfe</a>)</p>
+<p><strong>Adaboost</strong> classified as Weak learner &amp; because it is simple meaning this algorithm execute it faster rather just guessing.
+Adaboost is flexible and versatile. can incorporate any learning algorithm and can work with a large variety of data. we can set auto-tune to train the learner by specify the number of round since each successive AdaBoost round refines the weights for each of the best learners</p>
+<p><strong>Decision Tree</strong> also classified as weak learner. a decision tree can be <em>used to visually and explicitly to represent decisions and decision making</em>. by displaying a sequence of steps, its give an effective and easy way to visualize and understand the potential options of a decision and its range of possible outcomes. this algorithm also helps identify every potential option and weigh each course of action against the risks and rewards the result for each option.</p>
+<p>what I can conclude, <em>the best weak learners are best combined in a way that allows each one to solve a limited section of the problem. Any machine learning routine can be used as a weak learner</em></p>
+<p>another reference :</p>
+<ul>
+<li><a href="https://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/">https://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/</a></li>
+<li><a href="http://blog.echen.me/2011/03/14/laymans-introduction-to-random-forests/">http://blog.echen.me/2011/03/14/laymans-introduction-to-random-forests/</a></li>
+<li><a href="https://prateekvjoshi.com/2014/05/05/what-is-adaboost/">https://prateekvjoshi.com/2014/05/05/what-is-adaboost/</a></li>
+<li><a href="https://xgboost.readthedocs.io/en/latest/tutorials/model.html">https://xgboost.readthedocs.io/en/latest/tutorials/model.html</a></li>
+<li><a href="https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052">https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052</a></li>
+<li><a href="https://review.udacity.com/#!/reviews/2745295">https://review.udacity.com/#!/reviews/2745295</a></li>
+</ul>
 
 </div>
 </div>
