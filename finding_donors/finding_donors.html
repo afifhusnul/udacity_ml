@@ -15053,22 +15053,33 @@ It is a ratio of true positives(words classified as spam, and which are actually
 2.DecisionTreeClassifier
 3.Support Vector Machine (SVM)</p>
 <h2 id="Adaboost">Adaboost<a class="anchor-link" href="#Adaboost">&#182;</a></h2><ul>
-<li>Can use various weak classifiers without filtering features. In addition, it delivers high execution efficiency, and can avoid overfitting issues</li>
-<li>Able to trains the weak classifiers without knowing the prior knowledge. The synthetic strong classifier can significantly improve the classification accuracy, and it is suitable for classification of most types of data</li>
-<li>The training of rough weak classifiers is much easier than training of the accurate strong classifiers. It trains multiple weak classifiers to form a strong classifier with better classification performance.</li>
+<li>Describe one real-world application : Populary used in regression and classification procedures</li>
+<li>What are the strengths of the model: The prediction capability is efficient</li>
+<li>Weaknesses : a bit hard to streamline as the estimator was base on the previous result</li>
+<li>Good candidate for the problem : able to transforms weak learners or predictors to strong predictors in order to solve problems of classification</li>
 </ul>
 <h2 id="Decision-Tree">Decision Tree<a class="anchor-link" href="#Decision-Tree">&#182;</a></h2><ul>
-<li>Typically very fast!</li>
-<li>Can handle both categorical and numerical features</li>
-<li>As we can the nitely see here that our Decision Tree has an overatting issue. This is typical with Decision Trees and Random Forests.</li>
-<li>They are are easy to visualize.</li>
+<li>Describe one real-world application : Typically very fast!</li>
+<li>What are the strengths of the model: Can handle both categorical and numerical features</li>
+<li>Weaknesses :As we can the nitely see here that our Decision Tree has an overatting issue. This is typical with Decision Trees and Random Forests.</li>
+<li>Good candidate for the problem : They are are easy to visualize.</li>
 </ul>
 <h2 id="Support-Vector-Machine-(SVM)">Support Vector Machine (SVM)<a class="anchor-link" href="#Support-Vector-Machine-(SVM)">&#182;</a></h2><ul>
-<li>Typically much slower, but the kernel trick makes it very nice to fit non-linear data.</li>
-<li>They are memory efficient, as they only have to remember the support vectors.</li>
-<li>Also note that the SVM output parameters are not really interpretable.</li>
-<li>We can use probability = True to calculate probabilities, however very slow as it used ve fold CV</li>
+<li>Describe one real-world application : Typically much slower, but the kernel trick makes it very nice to fit non-linear data.</li>
+<li>What are the strengths of the model: They are memory efficient, as they only have to remember the support vectors.</li>
+<li>Weaknesses : Also note that the SVM output parameters are not really interpretable.</li>
+<li>Good candidate for the problem : We can use probability = True to calculate probabilities, however very slow as it used ve fold CV</li>
 </ul>
+<p>References I used --&gt;
+<a href="https://corporatefinanceinstitute.com/resources/knowledge/other/boosting/">https://corporatefinanceinstitute.com/resources/knowledge/other/boosting/</a>
+<a href="https://www.datacamp.com/community/tutorials/adaboost-classifier-python">https://www.datacamp.com/community/tutorials/adaboost-classifier-python</a>
+<a href="http://www.cs.man.ac.uk/~nikolaon/~nikolaon_files/Introduction_to_AdaBoost.pdf">http://www.cs.man.ac.uk/~nikolaon/~nikolaon_files/Introduction_to_AdaBoost.pdf</a>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6471212/#:~:text=AdaBoost%20is%20a%20boosting%20algorithm,tree%20as%20a%20weak%20classifier.&amp;text=Although%20the%20AdaBoost%20algorithm%20can,than%20samples%20of%20minority%20class">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6471212/#:~:text=AdaBoost%20is%20a%20boosting%20algorithm,tree%20as%20a%20weak%20classifier.&amp;text=Although%20the%20AdaBoost%20algorithm%20can,than%20samples%20of%20minority%20class</a>
+<a href="https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/">https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/</a>
+<a href="https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python">https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python</a>
+<a href="https://towardsdatascience.com/understanding-decision-tree-classifier-7366224e033b">https://towardsdatascience.com/understanding-decision-tree-classifier-7366224e033b</a>
+<a href="https://review.udacity.com/#!/reviews/2745295">https://review.udacity.com/#!/reviews/2745295</a>
+And Udacity material</p>
 
 </div>
 </div>
@@ -15582,13 +15593,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer: </strong></p>
-<p>I have chosen to work with the AdaBoost classifier as it is the best classifier for this data set for the following reasons:</p>
-<p>AdaBoost is one of the first boosting algorithms to be adapted in solving practices. Adaboost helps you combine multiple “weak classifiers” into a single “strong classifier”. Here are some (fun) facts about Adaboost!</p>
-<ul>
-<li>The weak learners in AdaBoost are decision trees with a single split, called decision stumps.</li>
-<li>AdaBoost works by putting more weight on difficult to classify instances and less on those already handled well.</li>
-<li>AdaBoost algorithms can be used for both classification and regression problem.</li>
-</ul>
+<p>I have chosen to work with the AdaBoost classifier as it is the best classifier for this data set and this AdaBoost algorithms able to adapted for solving practices.</p>
 <p>Full resource material will be cover in here (<a href="https://towardsdatascience.com/understanding-adaboost-2f94f22d5bfe">https://towardsdatascience.com/understanding-adaboost-2f94f22d5bfe</a>)</p>
 
 </div>
