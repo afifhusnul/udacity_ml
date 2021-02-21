@@ -16,7 +16,7 @@ Usage for Python CLI
 
 or if with json file
 
-`python predict.py ./test_images/cautleya_spicata.jpg ../Part_1_Dev/image_classifier.h5 --top_k 5 --category_names ./json/label_map.json;`
+`python predict.py ./test_images/cautleya_spicata.jpg ../Part_1_Dev/image_classifier.h5 --top_k 5 --category_names ../Part_1_Dev/json/label_map.json;`
 
 
 
