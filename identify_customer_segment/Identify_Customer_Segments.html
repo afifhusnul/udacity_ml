@@ -20656,7 +20656,7 @@ All the top components have positive value, means they are positively correlated
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># under presented in the customer data compared to the general population?</span>
 <span class="c1"># on the chart we can see cluster 3,4,7,9,11,13</span>
-<span class="c1">#check on cluster 9</span>
+<span class="c1">#check on cluster 3</span>
 <span class="n">cluster_overreprensented_values</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">kmeans</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">cluster_overreprensented_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">customer_columns</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;column&#39;</span><span class="p">])</span>
 <span class="n">cluster_overreprensented_df</span><span class="p">[</span><span class="s1">&#39;values&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cluster_overreprensented_values</span>
